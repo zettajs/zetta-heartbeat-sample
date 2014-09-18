@@ -1,8 +1,8 @@
 var zetta = require('zetta');
 var AutoScout = require('zetta-auto-scout');
-var alert = require('./alert');
-var Heartbeat = require('./heartbeat');
-var LED = require('./led');
+var alert = require('./apps/alert');
+var Heartbeat = require('./devices/heartbeat/heartbeat');
+var LED = require('./devices/LED/led');
 
 var HeartbeatScout = new AutoScout('heartbeat', Heartbeat);
 var LEDScout = new AutoScout('led', LED);
