@@ -20,7 +20,7 @@ You'll find the step by step directions for writing the code under the `/docs` g
 ##Requirements
 
 + Tutorial Level: **Basic**
-+ Time Commitment: **1 to 3 Hours**
++ Time Commitment: **1 Hour**
 + Goal: Zetta application using mock devices to demonstrate features and fundamentals.
 + Topics Covered
   + Device Basics
