@@ -1,14 +1,13 @@
 var zetta = require('zetta');
 var AutoScout = require('zetta-auto-scout');
 var alert = require('./apps/alert');
-var Heartbeat = require('./devices/heartbeat/heartbeat');
-var LED = require('./devices/LED/led');
-
-var HeartbeatScout = new AutoScout('heartbeat', Heartbeat);
-var LEDScout = new AutoScout('led', LED);
+var Heartbeat = require('zetta-mock-heartbeat-sensor');
+var LED = require('zetta-mock-led');
 
 zetta()
-  .use(HeartbeatScout)
-  .use(LEDScout)
+  .name('zetta.matt')
+  .use(Heartbeat)
+  .use(LED)
+  .link('http://hello-zetta.herokuapp.com')
   .load(alert)
   .listen(process.env.PORT || 1337);
