@@ -4,10 +4,9 @@
   "description": "A basic Zetta sample.",
   "main": "server.js",
   "dependencies": {
-    "zetta": "0.8.0",
-    "zetta-auto-scout": "~0.2.0",
-    "zetta-mock-heartbeat-sensor": "0.1.0",
-    "zetta-mock-led": "0.0.0"
+    "zetta": "0.10.0",
+    "zetta-mock-heartbeat-sensor": "0.2.0",
+    "zetta-mock-led": "0.3.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -6,8 +6,8 @@ var LED = require('zetta-mock-led');
 
 zetta()
   .name('zetta.matt')
-  .use(Heartbeat)
   .use(LED)
+  .use(Heartbeat)
+  .use(alert)
   .link('http://hello-zetta.herokuapp.com')
-  .load(alert)
   .listen(process.env.PORT || 1337);
