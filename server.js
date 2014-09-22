@@ -1,5 +1,4 @@
 var zetta = require('zetta');
-var AutoScout = require('zetta-auto-scout');
 var alert = require('./apps/alert');
 var Heartbeat = require('zetta-mock-heartbeat-sensor');
 var LED = require('zetta-mock-led');
