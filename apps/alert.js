@@ -1,7 +1,8 @@
 module.exports = function(server) {
-  var heartbeatQuery = server.where({ type: 'heartbeat' });
+//  var heartbeatQuery = server.where({ type: 'heartbeat' });
 //  var ledQuery = server.where({ type: 'led' });
   var ledQuery = server.ql('where type="led"');
+  var heartbeatQuery = server.query().where('type', { eq: 'heartbeat' })
 
   server.observe([heartbeatQuery, ledQuery], function(heartbeat, led) {
     heartbeat.streams.pulse.on('data', function(pulse) {
